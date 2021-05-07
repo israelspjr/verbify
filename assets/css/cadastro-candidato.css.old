@@ -1,0 +1,251 @@
+/*
+    Document   : cadastro-candidato
+    Created on : 30/05/2012, 17:33:57
+    Author     : paula
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#frm-cadastro-talento {
+	/* font-family: Tahoma,Verdana,Arial; */
+	font-family: MyriadProLightRegular;
+	/* font-size: 14px; */
+	font-size: 15px;
+	/* background-color: #f4f5ef; */
+	background-color: #f1f1f1;
+}
+
+#frm-cadastro-talento fieldset{
+	margin: 10px;
+    padding: 10px;
+	/* border-color: #747d4a; */
+	border: 2px solid #747d4a;
+	color: #696969;
+}
+#frm-cadastro-talento ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#frm-cadastro-talento ul li {
+	clear: both;
+	padding: 5px 0;
+}
+#frm-cadastro-talento ul li .lbl-left {
+	display: block;
+	float: left;
+	width: 180px;
+	padding-right: 5px;
+	text-align: left;
+}
+#frm-cadastro-talento ul li .lbl-bigleft {
+	display: block;
+	float: left;
+	width: 450px;
+	padding-right: 5px;
+	text-align: left;
+}
+#frm-cadastro-talento ul li .lbl-radio {
+	width: 120px;
+	display: block;
+	float: left;
+	padding-right: 5px;
+}
+#frm-cadastro-talento .lbl-check{
+	width: 220px;
+	display: block;
+	float: left;
+}
+#frm-cadastro-talento .lbl-radio-long{
+	width: 660px;
+	display: block;
+	float: left;
+}
+#frm-cadastro-talento ul li .ipt{
+	display: block;
+	float: left;
+	width: 340px;
+	margin-right: 5px;
+}
+#frm-cadastro-talento ul li .cpf{
+	width: 175px;
+}
+#frm-cadastro-talento ul li .tel{
+	width: 220px;
+}
+#frm-cadastro-talento ul li .txt{
+	display: block;
+	float: left;
+	width: 240px;
+	margin-right: 5px;
+	height: 90px;
+}
+#frm-cadastro-talento ul li .ipt-error{
+	border: 1px solid #B80C07;
+}
+#frm-cadastro-talento ul li .dv_campo{
+	display: block;
+	float: left;
+	width: 660px;
+	/* background: #f0f0f0; */
+	background: #fff;
+	padding: 5px;
+}
+#frm-cadastro-talento ul li .colcampo {
+	margin-left: 185px;
+	line-height: 15px;
+	display: block;
+}
+#frm-cadastro-talento .error{
+	line-height: 15px;
+	color: #B80C07;
+	font-size: 12px;
+}
+#frm-cadastro-talento ul li .ipt-outro{
+	width: 200px;
+}
+#frm-cadastro-talento ul li .anos{
+	width: 50px;
+}
+/*
+#tb_disponibilidade{
+	width: 100%;
+	border-collapse: collapse;
+}
+#tb_disponibilidade th{
+	border: 1px solid black;
+	background: #e0e0e0;
+}
+#tb_disponibilidade td{
+	border: 1px solid black;
+}
+*/
+#dv_regiao {
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+#dv_regiao label{
+	display: block;
+}
+#dv_regiao #dv_regiao_checks{
+	padding: 5px 10px;
+	background: #FFF;
+	/*
+	width: 450px;
+	max-height: 300px;
+	overflow: auto;
+	*/
+}
+#dv_regiao #mark-all{ text-align: center; }
+#dv_regiao input[type=checkbox]{
+	margin-right: 5px;
+}
+
+#frm-cadastro-talento .h2_title {
+	text-align: left;
+    color: #4480AA;
+    font-size: 16px;
+    margin: 5px 0;
+	border: none;
+	padding: 0;
+	line-height: 20px;
+}
+.dv_referencia{
+	background: #f0f0f0;
+	border: 1px solid #666666;
+	margin: 20px 0 0;
+	padding: 10px;
+}
+.dv_referencia blockquote{
+	padding: 5px 0 10px 0;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 15px;
+}
+.pendente{
+	background: #ede0df;
+	border: 1px solid #9a0900;
+}
+.aprovado{
+	background: #f0f0f0;
+	border: 1px solid #666666;
+}
+.dv_acao{
+	margin: 5px 0;
+}
+.dvsao_viagens, .dvsao_certificacoes, .dvsao_graduacoes, .dvsao_experiencias, .dvsao_cursos {
+	clear: both;
+	background: #f0f0f0;
+	border: 1px solid #C0C0C0;
+    margin: 10px 0;
+    padding: 10px;
+    width: 870px;
+}
+
+.cell-horiz{
+	float: left;
+	margin-right: 10px;
+}
+.obs{
+	color: #0d74af;
+}
+.dv_obs{
+	clear: both;
+	border: 1px solid #0d74af;
+	background-color: #e3f2f5;
+	padding: 3px 5px;
+	text-align: justify;
+	margin: 5px 0;
+	font-size: 12px;
+	line-height: 15px;
+}
+.sobremim{
+	width: 100%;
+	height: 110px;
+}
+
+#tb_disponibilidade .item{
+	cursor: pointer;
+	text-align: center;
+}
+
+#tb_disponibilidade .livre{
+	background: #d0f2e0;
+}
+
+#tb_disponibilidade .ocupado{
+	background: #ffd1d1;
+}
+
+#fds_referencias label{
+	clear: both;
+	display: block;
+	float: left;
+	width: 68px;
+}
+#fds_referencias .row{
+	margin: 5px 0;
+}
+#fds_referencias input[type=text]{
+	width: 300px;
+	float: left;
+	margin-right: 10px;
+}
+.dv_rdotel{
+	float: left; 
+	margin: 0 5px 0 0;
+}
+.dv_rdotel label{
+	margin: 0 5px 0 0;
+}
+.tip {
+    background:#fff;
+    display:none; /*--Hides by default--*/
+    padding:10px;
+    margin-left:10px;
+    position:absolute;    
+	z-index:1000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}

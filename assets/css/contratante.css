@@ -1,0 +1,82 @@
+#content{
+	font-size: 13px;
+}
+.menucontratante{
+	margin-bottom: 10px;
+}
+.dv_gray_box{
+	border: 1px solid #c0c0c0;
+	background: #f0f0f0;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+#tb_candidatos{
+	width: 100%;
+	border-collapse: collapse;
+	line-height: 18px;
+}
+#tb_candidatos td, th{
+	border: 1px solid #c0c0c0;
+	padding: 3px;
+}
+#tb_candidatos th{
+	/* background: antiqueWhite; */
+	background-color: #ddd;
+}
+#tb_candidatos td{
+	/* background: #E0F7FF; OLD */
+	background: #fff;
+}
+#tb_candidatos .th_link{
+	width: 100px;
+}
+
+#frm_vaga {
+	/* font-family: Tahoma,Verdana,Arial; */
+	font-family: MyriadProLightRegular;
+	font-size: 15px;
+	background: #f1f1f1;
+	padding: 10px 20px;
+}
+
+.tb_geral{
+	margin-top: 10px;
+	width: 100%;
+	border-collapse: collapse;
+}
+.tb_geral td, th{
+	border: 1px solid #c0c0c0;
+	text-align: left;
+	padding: 3px;
+}
+.tb_geral th{
+	/* background: antiqueWhite; */
+	background-color: #ddd;
+}
+.tb_geral td{
+	background: #E0F7FF;
+}
+.tb_geral .th_link{
+	width: 80px;
+}
+.tr_lista_prof{
+	cursor: pointer;
+}
+#tb_candidatos tr:hover td{
+	background: #F5F5F5;
+}
+#tabs h2{
+	margin: 10px 0;
+	border-bottom: 1px solid black;
+}
+
+.dv_btn{
+	margin: 10px 0;
+}
+.lnk_voltar{ text-align: center; }
+.lnk_voltar a{
+	font-size: 20px;
+	color: #c94b4b;
+}
+.center{ text-align: center; }

@@ -1,0 +1,88 @@
+#frm-cadastro-contratante {
+	/* font-family: Tahoma,Verdana,Arial; */
+	font-family: MyriadProLightRegular;
+	font-size: 15px;
+	/* background: #faeeee; */
+	background: #f1f1f1;
+}
+
+#frm-cadastro-contratante fieldset{
+	margin: 10px;
+	padding: 10px;
+	/* border-color: #c94b4b; */
+	border: 2px solid #c94b4b;
+	/* color: #c94b4b; */
+	color: #696969;
+}
+#frm-cadastro-contratante ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#frm-cadastro-contratante ul li {
+	clear: both;
+	padding: 5px 0;
+}
+#frm-cadastro-contratante ul li .lbl-left{
+	display: block;
+	float: left;
+	width: 150px;
+	padding-right: 5px;
+	text-align: left;
+}
+#frm-cadastro-contratante ul li .lbl-bigleft {
+	display: block;
+	float: left;
+	width: 450px;
+	padding-right: 5px;
+	text-align: left;
+}
+#frm-cadastro-contratante ul li .lbl-radio{
+	width: 120px;
+	display: block;
+	float: left;
+	padding-right: 5px;
+}
+#frm-cadastro-contratante .lbl-check{
+	width: 220px;
+	display: block;
+	float: left;
+}
+#frm-cadastro-contratante .lbl-radio-long{
+	width: 660px;
+	display: block;
+	float: left;
+}
+#frm-cadastro-contratante ul li .ipt{
+	display: block;
+	float: left;
+	width: 240px;
+	margin-right: 5px;
+}
+#frm-cadastro-contratante ul li .txt{
+	display: block;
+	float: left;
+	width: 240px;
+	margin-right: 5px;
+	height: 90px;
+}
+#frm-cadastro-contratante ul li .ipt-error{
+	border: 1px solid #B80C07;
+}
+#frm-cadastro-contratante ul li .dv_campo{
+	display: block;
+	float: left;
+	width: 660px;
+	background: #f0f0f0;
+	padding: 5px;
+}
+#frm-cadastro-contratante ul li .colcampo {
+	margin-left: 155px;
+	line-height: 15px;
+	display: block;
+}
+#frm-cadastro-contratante .error{
+	line-height: 15px;
+	color: #B80C07;
+	font-size: 12px;
+}

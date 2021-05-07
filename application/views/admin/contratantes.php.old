@@ -1,0 +1,14 @@
+<h2>Escolas</h2>
+<form>
+	<input name="nome" value="<? echo Arr::get($_REQUEST, "nome") ?>" />
+	<input type="submit" value="buscar" />
+</form>
+<?
+if($pagination->total_rows == 0){
+	echo '<p class="p_warning">Nenhum registro encontrado</p>';
+} else {
+	echo '<p>'.$pagination->total_rows.' escola(s) encontrada(s)</p>
+	<div id="dv_table_contratantes">'.$table.'</div>
+	<div class="dv_paginacao">'.$pagination->renderFullNav().'</div>';
+}
+?>

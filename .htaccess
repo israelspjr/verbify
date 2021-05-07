@@ -1,0 +1,58 @@
+<IfModule lsapi_module>
+   php_flag display_errors On
+   php_flag allow_url_include On
+   php_flag magic_quotes_gpc On
+   php_flag register_long_arrays On
+   php_flag register_globals On
+   php_flag allow_call_time_pass_reference On
+   php_value date.timezone "America/Sao_Paulo"
+</IfModule>
+
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56___lsphp .php .php5 .phtml
+</IfModule>
+
+
+# Turn on URL rewriting
+
+RewriteEngine On
+
+
+
+# Installation directory
+
+#RewriteBase /
+
+
+
+# Protect hidden files from being viewed
+
+<Files .*>
+
+#	Order Deny,Allow
+
+#	Deny From All
+
+</Files>
+
+
+
+# Protect application and system files from being viewed
+
+RewriteRule ^(?:application|modules|system)\b.* index.php/$0 [L]
+
+
+# Allow any files or directories that exist to be displayed directly
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+# Rewrite all other URLs to index.php/URL
+
+RewriteRule .* index.php/$0 [PT]
+
+
+

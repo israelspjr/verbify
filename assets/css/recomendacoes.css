@@ -1,0 +1,23 @@
+#frm_recomendacoes div{
+	margin: 5px 0;
+}
+#frm_recomendacoes label{
+	display: block;
+	width: 150px;
+}
+#frm_recomendacoes input[type=text],
+#frm_recomendacoes select,
+#frm_recomendacoes textarea {
+	display: block;
+	width: 350px;
+	margin-right: 5px;
+}
+#frm_recomendacoes textarea {
+	height: 100px;
+}
+#frm_recomendacoes .error {
+	line-height: 15px;
+	color: #B80C07;
+	font-size: 12px;
+	width: auto;
+}

@@ -1,0 +1,24 @@
+function maskDocumento(el){
+	if(el.val() == "B"){
+		$("#lblcpf").html('CPF');
+		$(".cpf").mask("999.999.999-99");
+	} else {
+		$("#lblcpf").html('ID');
+		$(".cpf").unmask();
+	}
+}
+function maskTelefone(el){
+	if(el.val() == "B"){
+		el.parents("li").find(".tel").mask("(+55)(99)9999-9999?9");
+	} else {
+		el.parents("li").find(".tel").unmask();
+	}
+}
+function showQual(chk, div) {
+	if( chk.is(':checked') ) {
+		div.appendTo(chk.parent().parent());
+		div.show();
+	} else {
+		div.hide();
+	}
+}

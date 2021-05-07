@@ -1,0 +1,1189 @@
+@font-face {
+
+    font-family: 'MyriadPro-Regular';
+
+    src: url('fonts/myriadpro-regular.eot');
+
+    src: url('fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/myriadpro-regular.woff') format('woff'),
+
+         url('fonts/myriadpro-regular.ttf') format('truetype'),
+
+         url('fonts/myriadpro-regular.svg#myriadpro-regular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'MyriadProLightRegular';
+
+    src: url('fonts/myriadpro-light-webfont.eot');
+
+    src: url('fonts/myriadpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/myriadpro-light-webfont.woff') format('woff'),
+
+         url('fonts/myriadpro-light-webfont.ttf') format('truetype'),
+
+         url('fonts/myriadpro-light-webfont.svg#MyriadProLightRegular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+	outline: none;
+
+}
+
+html, body {
+
+    height: 100%;
+
+	z-index: 10000;
+
+	position: relative;
+
+    /* font-family: Tahoma,Verdana,Arial; */
+
+    font-family: MyriadProLightRegular;
+
+}
+
+a {
+
+	text-decoration:none;
+
+	color: rgb(84, 84, 85);
+
+	/* color: #424143; */
+
+	outline: 0;
+
+}
+
+img{
+
+	border: 0;
+
+}
+
+form input[type=button],
+
+form input[type=submit]{
+
+	padding: 2px 10px;
+
+}
+
+/* SITE */
+
+
+
+#frm_page{
+
+	border: 0;
+
+	width: 900px;
+
+	margin: 0 auto;
+
+}
+
+#dv_all{
+
+	min-height: 100%;
+
+	position: relative;
+
+	color: rgb(84, 84, 85);
+
+	/* color: #424143; */
+
+	max-width: 1600px;
+
+	margin: 0 auto;
+
+	overflow: hidden;
+
+}
+
+* html #dv_all {
+
+	height: 100%; /* hack para IE6 que trata height como min-height */
+
+}
+
+#dv_header, #dv_page, #dv_footer {
+
+    /*width: 100%;*/
+
+	width: 1000px;
+
+	margin: 0 auto;
+
+	clear: both;
+
+}
+
+#dv_page{ padding-bottom: 20px; }
+
+#dv_header {
+
+	background: #fff;
+
+	padding: 10px 0 20px 0;
+
+	position: relative;
+
+	z-index: 10000;
+
+}
+
+#dv_header .logo {
+
+	display: block;
+
+	width: 672px;
+
+	height: 152px;
+
+	text-align: center;
+
+	background: url(../img/logotipo_principal.png) no-repeat;
+
+	/*margin: 20px 0;*/
+
+}
+
+#dv_header #dv_search{
+
+/*	position: absolute;*/
+
+	top: 40px;
+
+	right: 0;
+
+	/* margin: 40px 10px 0; */
+
+	/*margin: 40px 30px 0 0;*/
+
+	float: right;
+
+}
+
+.dv-buscaavancada{
+
+	font-family: "MyriadProLightRegular";
+
+	width: 220px;
+
+	text-align: right;
+
+}
+
+#dv_header #ipt_search {
+
+	padding-left: 35px;
+
+	background: #f3f3f3 url(../img/lupa.jpg) 7px 5px no-repeat;
+
+	width: 200px;
+
+	height: 30px;
+
+	float: left;
+
+	border: 0;
+
+	border-radius: 0.5em;
+
+	outline: none;
+
+	font-size: 18px;
+
+}
+
+#dv_hello{
+
+	position: absolute;
+
+	right: 0;
+
+	top: 10px;
+
+	text-align: right;
+
+	margin-right: 10px;
+
+}
+
+#dv_hello a{
+
+	font-size: 10pt;
+
+}
+
+#dv_header #dv_search #dv_entrar{
+
+	float: left;
+
+	border-left: 2px solid #666666;
+
+	line-height: 30px;
+
+	margin: 0 0 0 10px;
+
+	padding-left: 10px;
+
+	font-size: 18px;
+
+	text-align: right;
+
+}
+
+#dv_header #dv_search #dv_boxlogin{
+
+	position: absolute;
+
+	/* top: 30px; */
+
+	top: 22px;
+
+	right: 0;
+
+	margin-right: -10px;
+
+	background: url(../img/box-login.png) no-repeat top;
+
+	width: 260px;
+
+	height: 180px;
+
+	display: none;
+
+	z-index: 10001;
+
+}
+
+#frm-login{
+
+	margin: 30px 20px 0 20px;
+
+}
+
+#dv_boxlogin input{
+
+	margin: 3px 0;
+
+}
+
+#dv_boxlogin input[type=text],
+
+#dv_boxlogin input[type=password]{
+
+	width: 210px;
+
+	border: 3px solid #cccccc;
+
+	height: 20px;
+
+	padding: 0 0 0 5px;
+
+	outline-color: #1b75bb;
+
+	outline-width: 3px;
+
+	/* font-family: Tahoma,Verdana,Arial; */
+
+	font-family: MyriadProLightRegular;
+
+}
+
+#dv_boxlogin .dv_opt{
+
+	margin: 10px 0;
+
+}
+
+#dv_boxlogin .dv_opt input[type=radio]{
+
+	margin-left: 20px;
+
+	margin-right: 3px;
+
+}
+
+#dv_boxlogin .btn_entrar{
+
+	background: url(../img/btn_entrar.jpg) no-repeat;
+
+	width: 87px;
+
+	height: 32px;
+
+	border: none;
+
+	text-align: left;
+
+	font-size: 18px;
+
+	color: #777471;
+
+}
+
+#dv_boxlogin .forgotpass {
+
+	margin-top: 10px;
+
+	display: block;
+
+	float: right;
+
+	font-size: 10pt;
+
+}
+
+#dv_boxlogin .forgotpass a {
+
+	color: #696969;
+
+}
+
+#dv_header #menu{
+
+	font-family: "MyriadProLightRegular";
+
+	list-style: none;
+
+	width:900px;
+
+	margin:0 auto;
+
+}
+
+#dv_header #menu li{
+
+	float: left;
+
+	display: block;
+
+ /* width: 25%;*/
+
+	width: 20%;
+
+	text-align: left;
+
+	text-align: center;
+
+}
+
+#dv_header #menu li a{
+
+	/* color: #424143; */
+
+	color: black; /*rgb(84, 84, 85);*/
+
+	text-decoration: none;
+
+	font-size: 18px;
+
+	position: relative;
+
+	padding-left: 20px;
+	
+	font-weight: bold;
+
+}
+
+
+
+#dv_header #menu li a span{
+
+	top: 4px;
+
+	left: 0;
+
+	position: absolute;
+
+	display: inline-block;
+
+	margin-right: 10px;
+
+	width: 12px;
+
+	height: 12px;
+
+	z-index: 10000;
+
+}
+
+#dv_page{
+
+	/* margin-bottom: 30px; */
+
+}
+
+.lnklogin{
+
+	float: left;
+
+	margin: 20px;
+
+}
+
+#dv_footer{
+
+	background: url(../img/rodape.jpg) repeat-x;
+
+	padding: 20px 0;
+
+	font-size: 14px;
+
+}
+
+#dv_footer .dv_right{
+
+	float: right;
+
+}
+
+#dv_footer .square{
+
+	display: inline-block;
+
+	margin-right: 2px;
+
+	width: 10px;
+
+	height: 10px;
+
+}
+
+.dv_quadrado_invisivel{
+
+	width: 100px;
+
+	height: 100px;
+
+	float: left;
+
+	margin: 0 20px 10px 0;
+
+}
+
+
+
+
+
+/* HOME */
+
+.p_enunciado{
+
+	font-style: italic;
+
+	margin: 10px 0;
+
+}
+
+
+
+#dv_video{
+
+	width: 100%;
+
+	height: 513px;
+
+	/* background: url(../img/home/video.jpg) no-repeat; */
+
+}
+
+#dv_home{
+
+	font-family: "MyriadProLightRegular";
+
+}
+
+#dv_home #dv_texto{
+
+	width: 100%;
+
+	/* color: #424143; */
+
+	color: rgb(84, 84, 85);
+
+	padding: 20px 0;
+
+	text-align: left;
+
+	background: #F9F9F9 url(../img/ponta-right.jpg) no-repeat right bottom;
+
+	font-size: 15px;
+
+}
+
+#dv_home h1{
+
+	line-height: 40px;
+
+	font-weight: normal;
+
+	margin: 0;
+
+	padding: 0 0 15px 0;
+
+	font-size: 26pt;
+
+}
+
+#dv_home .cols {
+
+	float: left;
+
+	width: 155px;
+
+	text-align: center;
+
+	margin: 15px 65px 0 0;
+
+	padding: 20px 10px;
+
+	height: 260px;
+
+	/* background:	#fafafa; */
+
+	background: #fafafa url(../img/ponta-left.jpg) no-repeat left top;
+
+}
+
+#dv_home #col-first {
+
+	margin-left: 0;
+
+}
+
+#dv_home #col-last {
+
+	margin-right: 0;
+
+}
+
+#dv_home .cols .title{
+
+	font-weight: bold;
+
+	margin: 10px 0;
+
+	min-height: 35px;
+
+	background: none;
+
+}
+
+#dv_home .cols .azul{
+
+	color: #0d455e;
+
+}
+
+#dv_home .cols .amarelo{
+
+	color: #7e8e35;
+
+}
+
+#dv_home .cols .vermelho{
+
+	color: #ec1c24;
+
+}
+
+#dv_home .cols .cinza{
+
+	/* color: #424143; */
+
+	color: rgb(84, 84, 85);
+
+}
+
+#dv_home .cols p{
+
+	font-size: 12px/* 12px */;
+
+	text-align: left;
+
+	padding: 0 25px;
+
+}
+
+#dv_home .cols img{
+
+	display: block;
+
+	margin: 0 auto;
+
+}
+
+
+
+/* MAIS INFO */
+
+#dv_maisinfo .dv_texto{
+
+	width: 800px;
+
+	padding: 0 50px;
+
+	margin: 0 auto;
+
+	text-align: left;
+
+	line-height: 28px;
+
+	overflow: auto;
+
+	height: 400px;
+
+}
+
+#dv_maisinfo .dv_texto ul{
+
+	margin: 0 40px;
+
+}
+
+/*#dv_maisinfo #mycarousel li p{
+
+	padding: 0 150px;
+
+	text-align: left;
+
+	line-height: 28px;
+
+}*/
+
+
+
+#dv_maisinfo #mycarousel .dv_pagina{
+
+	padding: 0 0 10px 0;
+
+}
+
+#dv_maisinfo #mycarousel .dv_img{
+
+	/* height: 515px; */
+
+	height: 515px;
+
+}
+
+#dv_maisinfo .faq .perg{
+
+	font-weight: bold;
+
+}
+
+.titulo{ margin-left: 10px; margin-top: -10px; font-size: 15px; font-weight: normal; }
+
+
+
+/* LOGIN */
+
+#dv_login{
+
+	margin-top: 35px;
+
+	width: 570px;
+
+	float: right;
+
+}
+
+#dv_login .titulo{ float: left; display: block; margin-right: 30px; line-height: 45px; }
+
+#dv_login #frm-login{
+
+	float: left;
+
+	margin: 0;
+
+	border: 5px solid #b5b7b6;
+
+	background: #f3f3f3;
+
+	padding: 10px;
+
+}
+
+#dv_login input[type=text]{ width: 150px; }
+
+#dv_login input[type=password]{ width: 80px; }
+
+#dv_login .p_erro{ text-align: right; }
+
+
+
+#dv_quemsomos{
+
+	font-family: "MyriadProLightRegular";
+
+	/* background: #ff0000; */
+
+	padding: 0 0px;
+
+	text-align: justify;
+
+}
+
+#dv_quemsomos #dv_texto{
+
+	width: 920px;
+
+	margin: 0 auto;
+
+	/* color: #424143; */
+
+	color: rgb(84, 84, 85);
+
+	padding: 20px;
+
+	background: #F9F9F9 url(../img/ponta-right.jpg) no-repeat right bottom;
+
+}
+
+
+
+.pg_login #dv_boxlogin{
+
+	margin-left: 180px;
+
+	/* margin-top: -20px; */
+
+	margin-top: 10px;
+
+	position: relative;
+
+	background: url(../img/box-login-p.png) no-repeat top;
+
+	width: 260px;
+
+	padding: 5px 0 20px 0;
+
+}
+
+#frm_redefinir{
+
+	width: 900px;
+
+	/* font-family: Tahoma,Verdana,Arial; */
+
+	font-family: MyriadProLightRegular;
+
+	/* font-size: 14px; */
+
+	font-size: 15px;
+
+	background: #f1f1f1;
+
+	padding: 10px 20px;
+
+}
+
+#frm_redefinir label{
+
+	margin-top: 5px;
+
+	display: block;
+
+	width: 300px;
+
+}
+
+#frm_redefinir input[type=text],
+
+#frm_redefinir input[type=password]{
+
+	width: 300px;
+
+}
+
+
+
+/* BUSCA */
+
+#frm_busca, #frm_busca_red {
+
+/* 	font-family: Tahoma,Verdana,Arial;
+
+	font-size: 14px; */
+
+	font-family: MyriadProLightRegular;
+
+	font-size: 15px;
+
+	background: #f1f1f1;
+
+}
+
+#frm_busca fieldset{
+
+	margin: 10px;
+
+	padding: 10px;
+
+	border: 2px solid #7F8E34;
+
+	color: #696969;
+
+}
+
+#frm_busca_red fieldset{
+
+	margin: 10px;
+
+	padding: 10px;
+
+	border: 2px solid #c94b4b;
+
+	color: #696969;
+
+}
+
+#frm_busca .inline,
+
+#frm_busca_red .inline{
+
+	float: left;
+
+	width: 250px;
+
+	margin-right: 10px;
+
+}
+
+#frm_busca label,
+
+#frm_busca_red label{
+
+	display: block;
+
+}
+
+#frm_busca select,
+
+#frm_busca_red select{
+
+	width: 100%;
+
+}
+
+#frm_busca .newline,
+
+#frm_busca_red .newline{
+
+	margin: 10px;
+
+	clear: both;
+
+}
+
+#frm_busca .hora,
+
+#frm_busca_red .hora{
+
+	width: 90px;
+
+}
+
+
+
+.azul{ background: #0D455E; }
+
+.amarelo{ background: #D6DE26; }
+
+.verde{ background: #7F8E34; }
+
+.vermelho{ background: #EE4237; }
+
+.marrom{ background: #895D2E; }
+
+
+
+.txt-amarelo{ color: #D6DE26; }
+
+.txt-verde{ color: #7F8E34; }
+
+.txt-vermelho{ color: #EE4237; }
+
+.txt-marrom{ color: #895D2E; }
+
+
+
+.content{
+
+	width: 940px;
+
+	margin: 0 auto;
+
+	line-height: 28px;
+
+	/* color: #424143; */
+
+	color: rgb(84, 84, 85);
+
+}
+
+.content2{
+
+	width: 960px;
+
+	min-height: 1000px;
+
+	margin: 0 auto;
+
+	line-height: 25px;
+
+	/* color: #424143; */
+
+	color: rgb(84, 84, 85);
+
+}
+
+.clear{ clear: both; }
+
+.hide{ display: none; }
+
+.hide2 {
+
+	display: none;
+
+	/* color: #424143; */
+
+	color: rgb(84, 84, 85);
+
+	padding: 20px;
+
+	text-align: justify;
+
+	background: #F9F9F9 url(../img/ponta-right.jpg) no-repeat right bottom;
+
+}
+
+.h2_title{
+
+	font-size: 30pt;
+
+	font-family: "MyriadProLightRegular";
+
+	float: left;
+
+	/* margin: 40px 0 0 0; */
+
+	margin: 70px 0 0 -18px;
+
+}
+
+.content2 .h2_title{
+
+	font-size: 30pt;
+
+	font-family: "MyriadProLightRegular";
+
+	float: left;
+
+	margin: 70px 0 0 -8px;
+
+}
+
+.content2 h2 {
+
+	margin: 20px 0 20px 15px;
+
+}
+
+.h2_subtitle, .h2_curtitle{
+
+	font-size: 20pt;
+
+	font-family: "MyriadProLightRegular";
+
+	margin: 10px 0;
+
+}
+
+.h2_curtitle{
+
+	margin: 20px 0;
+
+}
+
+.p_error, .p_success, .p_warning {
+
+	font-size: 14px;
+
+	padding: 10px 10px 10px 33px;
+
+	margin-bottom: 15px;
+
+	color: #555;
+
+}
+
+.p_error {
+
+	background: #FFD1D1 url('../img/error.png') 10px center no-repeat;
+
+	border: 1px solid #F8ACAC;
+
+	margin: 10px 0;
+
+}
+
+.p_success{
+
+	background:  #EAF7D9 url('../img/success.png') 10px center no-repeat;
+
+	border: 1px solid  #BBDF8D;
+
+}
+
+.p_warning{
+
+	background: #f7edb7 url('../img/warning.png') 10px center no-repeat;
+
+	border: 1px solid #ffc000;
+
+}
+
+.obl{
+
+	color: #B80C07;
+
+}
+
+
+
+#slider {
+
+  width: 1000px;
+
+  height: 503px;
+
+}
+
+#dv_home_meio{
+
+	padding:0 70px; font-family: MyriadProLightRegular;
+
+}
+
+#dv_home_meio p{
+
+	margin-bottom: 10px;
+
+	/* text-align: justify; */
+
+}
+
+
+
+/* MAIS INFO */
+
+#dv_quemsomos ul{
+
+	margin: 10px 20px;
+
+	padding: 0 30px;
+
+}
+
+#comofunciona h4, #duvidas h4{
+
+	text-transform: uppercase;
+
+	margin: 0 0 20px;
+
+	font-size: 20px;
+
+}
+
+#duvidas .faq{
+
+	margin: 10px 0 20px;
+
+}
+
+#duvidas .faq .perg{
+
+	font-weight: bold;
+
+}
+
+
+
+.result_sep{
+
+	color: #911a1c;
+
+}
+
+.dv_paginacao{
+
+	text-align: center;
+
+}
+
+.dv_paginacao .page_link{
+
+	border: 1px solid #c0c0c0;
+
+	padding: 0 3px;
+
+}
+
+.dv_paginacao .active{
+
+	background: #F4E3FC;
+
+	border: 1px solid #c0c0c0;
+
+	padding: 0 3px;
+
+}
+
+#logo-disal
+
+{
+
+	height: 100px;
+
+	position: absolute;
+
+	top: 30px;
+
+	left: 480px;
+
+	background-image: url('../img/logo-disal.jpg');
+
+	width: 200px;
+
+	background-position: initial initial;
+
+	background-repeat: no-repeat no-repeat;
+
+}

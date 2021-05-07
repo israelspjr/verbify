@@ -1,0 +1,21 @@
+.interesse{ 
+	margin: 10px 0;
+	font-weight: bold;
+}
+.interesse_resposta{
+	background: #f0f0f0;
+	font-weight: normal;
+	padding: 5px 2px;
+}
+.viagem, .certificacao, .graduacao, .experiencia, .cursoslivres{
+	margin: 10px 0;
+}
+#tb_disponibilidade .item{
+	text-align: center;
+}
+#tb_disponibilidade .livre{
+	background: #d0f2e0;
+}
+#tb_disponibilidade .ocupado{
+	background: #ffd1d1;
+}

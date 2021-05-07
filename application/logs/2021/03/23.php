@@ -1,0 +1,7 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
+
+2021-03-23 12:37:53 --- ERROR: Database_Exception [ 1054 ]: Unknown column 'username' in 'where clause' [ SELECT * FROM `tb_candidato_experiencia` WHERE `candidato_id` IS NULL AND `username` IN ('51', '52') ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2021-03-23 12:38:15 --- ERROR: Database_Exception [ 1054 ]: Unknown column 'username' in 'where clause' [ SELECT * FROM `tb_candidato_experiencia` WHERE `candidato_id` IS NULL AND `username` IN ('51', '52') ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2021-03-23 12:39:03 --- ERROR: Database_Exception [ 1054 ]: Unknown column 'username' in 'where clause' [ SELECT * FROM `tb_candidato_experiencia` WHERE `candidato_id` IS NULL AND `username` IN ('51', '52') ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2021-03-23 12:39:36 --- ERROR: Database_Exception [ 1054 ]: Unknown column 'username' in 'where clause' [ SELECT * FROM `tb_candidato_experiencia` WHERE `candidato_id` IS NULL AND `username` IN ('51', '52') ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2021-03-23 12:48:00 --- ERROR: Database_Exception [ 1146 ]: Table 'companhi_vagas.tb_candidatoexperiencia' doesn't exist [ SELECT * FROM `tb_candidatoexperiencia` WHERE `candidato_id` = 7245 ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]

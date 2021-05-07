@@ -1,0 +1,31 @@
+#tb_extrato{
+	width: 600px;
+	font-size: 13px;
+	border-collapse: collapse;
+}
+#tb_extrato th{
+	/* background: #d6dfe6; */
+	background: #ddd;
+}
+#tb_extrato td{
+	padding: 1px 5px;
+}
+#tb_extrato .impar{
+	background: #ededed;
+}
+#tb_extrato .par{
+	background: #fff;
+}
+.data{
+	width: 80px;
+}
+.valor{
+	width: 80px;
+	text-align: right;
+}
+.neg{
+	color: red;
+}
+.pos{
+	color: #0088bb;
+}

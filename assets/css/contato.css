@@ -1,0 +1,18 @@
+/* CONTATO */
+#frm_contato{
+	font-family: "MyriadProLightRegular";
+	background: #F1F1F1;
+	padding: 10px 30px;
+}
+#frm_contato .row{
+	margin: 5px 0;
+}
+#frm_contato label,
+#frm_contato input[type=text],
+#frm_contato textarea{
+	width: 300px;
+	display: block;
+}
+#frm_contato textarea{
+	height: 100px;
+}

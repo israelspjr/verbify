@@ -1,0 +1,73 @@
+#frm_vaga .frm_lbl{
+	display: block;
+	float: left;
+	width: 150px;
+}
+#frm_vaga>div{
+	clear: both;
+	/* margin: 5px 0;*/
+}
+#frm_vaga input[type=text],
+#frm_vaga select,
+#frm_vaga textarea{
+	width: 250px;
+	float: left;
+	margin: 5px 10px 5px 0;
+}
+#frm_vaga .dv_campo{
+	width: 240px;
+	float: left; 
+	background: #fff; 
+	margin: 5px 0; 
+	padding: 5px;
+	margin-right: 10px;
+}
+#frm_vaga input[type=checkbox]{
+	margin-right: 5px;
+}
+#frm_vaga textarea{
+	height: 100px;
+}
+#frm_vaga .error{
+	color: #B80C07;
+}
+#frm_vaga #dv_cidade{
+	width: 410px;
+	display: inline;
+}
+.dv_btn{
+	clear: both;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+.linhavaga{
+	margin: 5px 0;
+	padding: 5px 0;
+	background: #F0F0F0;
+}
+
+#tb_vagas{
+	margin-top: 10px;
+	width: 100%;
+	border-collapse: collapse;
+}
+#tb_vagas td, th{
+	border: 1px solid #c0c0c0;
+	text-align: left;
+	padding: 3px;
+	line-height: 18px;
+}
+#tb_vagas th{
+	/* background: #D6DFE6; */
+	background: #ddd;
+}
+#tb_vagas td{
+	/* background: #fcf8ed; */
+	background: #f8f8f8;
+}
+#tb_vagas .cands a{
+	text-decoration: underline;
+}
+#tb_vagas .th_link{
+	width: 100px;
+}

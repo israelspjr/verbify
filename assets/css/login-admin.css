@@ -1,0 +1,27 @@
+#dv_login{
+	margin: 10px auto; 
+	padding: 10px 20px 10px 20px; 
+	width: 340px;
+	float: none;
+	/*background: #F0F0F0;
+	border: 1px solid #C0C0C0;*/
+}
+#frm_login{
+	width: 340px;
+}
+#frm_login input[type="text"], 
+#frm_login input[type="password"] {
+	width: 250px;
+	margin: 4px 0;
+}	
+#frm_login label {
+	clear: both;
+	display: block;
+	float: left;
+	width: 80px;
+	margin: 4px 0;
+}
+#dv_login .dv_btn { 
+	text-align: right; 
+	margin-right: 5px; 
+}
