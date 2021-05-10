@@ -162,7 +162,7 @@ if (isset($_SERVER['KOHANA_ENV']))
 
 Kohana::init(array(
 
-	'base_url'   => 'sistema/',
+//	'base_url'   => 'sistema/',
 
 	'index_file' => FALSE,
 
